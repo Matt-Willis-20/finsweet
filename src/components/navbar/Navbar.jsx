@@ -35,7 +35,7 @@ const Navbar = () => {
           <Link to='/' className='nav-link body-text-01' onClick={handleClick}>Home</Link>
           <Link to='/blog' className='nav-link body-text-01' onClick={handleClick}>Blog</Link>
           <Link to='/about' className='nav-link body-text-01' onClick={handleClick}>About Us</Link>
-          <Link to='/contact' className='nav-link body-text-01' >Contact Us </Link>
+          <Link to='/contact' className='nav-link body-text-01' onClick={handleClick} >Contact Us </Link>
           <button type="button">Subscribe</button>
         </div>
       )}
