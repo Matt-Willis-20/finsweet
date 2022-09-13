@@ -50,3 +50,27 @@
         display: none;
     }
 }
+
+@media screen and (max-width:768px) {
+    .home-featured-container {
+        grid-template-columns: 1fr;
+    }
+
+    .home-featured-intro {
+        align-items: center;
+        margin-bottom: 4rem;
+       
+    }
+
+    .home-featured-companies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .home-featured-companies-name:last-child {
+        display: inline-flex;
+    }
+}
