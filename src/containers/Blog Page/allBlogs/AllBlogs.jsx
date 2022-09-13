@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './allBlogs.css';
 import { blogsContent } from '../../../helpers/blogsContent';
 import Blogs from '../../../components/blogs/Blogs';
@@ -6,7 +6,7 @@ import BlogPagination from '../../../components/blogPagination/BlogPagination';
 
 
 const AllBlogs = () => {
-    const [blogsList, setBlogsList] = useState(blogsContent);
+    const [blogsList] = useState(blogsContent);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage] = useState(6);
 
@@ -17,8 +17,6 @@ const AllBlogs = () => {
 
     //change page of blog articles 
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-    
 
   return (
     <section className='section-padding'>
