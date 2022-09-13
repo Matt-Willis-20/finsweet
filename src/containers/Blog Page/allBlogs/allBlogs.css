@@ -1,0 +1,13 @@
+.all-blogs-heading {
+    font-size: 44px;
+    color: var(--color-primary);
+    width: 100%;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(109, 110, 118, 0.2);
+}
+
+.blogs-container {
+    margin-top: 2rem;
+}
+
+

@@ -1,0 +1,44 @@
+#blog-pagination-nav {
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs-pagination {
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+}
+
+.blog-page-number {
+    border: 1px solid var(--color-grey-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-link {
+    padding: 1.25rem 1.5rem;
+    color: var(--color-primary);
+    font-family: var(--font-family-heading);
+    background-color: var(--color-light-yellow);
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.page-link:hover {
+    background-color: var(--color-secondary)
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .page-link {
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+
+

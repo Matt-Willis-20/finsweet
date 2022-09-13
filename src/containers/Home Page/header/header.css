@@ -1,0 +1,84 @@
+#homepage-header {
+    color: var(--color-white);
+    background-image: url(../../../assets/images/Home-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* Photo by Brooke Cagle on Unsplash */
+ 
+.header-content p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: var(--font-family-body);
+    font-weight: 500;
+    margin-top: 2rem;
+}
+
+.header-content p:first-child span {
+    font-weight: 700;
+}
+
+.header-content p {
+    max-width: 600px; 
+    margin-bottom: 1rem;   
+}
+
+#homepage-header-title {
+    letter-spacing: -2px;
+    margin-bottom: 1rem;
+    max-width: 800px;
+}
+
+.author-name {
+    color: var(--color-secondary);
+}
+
+.header-content button {
+    margin: 2rem 0;
+}
+
+@media screen and (max-width: 992px) {
+    #homepage-header-title {
+        font-size: 50px;
+        line-height: 62px;
+        letter-spacing: -2px;
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #homepage-header-title {
+        font-size: 46px;
+        line-height: 58px;
+        letter-spacing: -1px;
+    }
+
+    .header-content p {
+        max-width: 500px; 
+        margin-bottom: 1rem;   
+    }
+
+    .header-content button {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #homepage-header-title {
+        font-size: 38px;
+        line-height: 58px;
+        letter-spacing: -1px;
+    }
+
+    .header-content p:first-child {
+        margin-top: 1rem;
+    }
+
+    .header-content p:first-child {
+        font-size: 14px;
+    }
+
+    .header-content button {
+        margin: 1rem 0;
+    }
+}

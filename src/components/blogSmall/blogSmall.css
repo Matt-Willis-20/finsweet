@@ -1,0 +1,19 @@
+.small-blog-container {
+    padding: 1rem 1.5rem 1.5rem;
+}
+
+.small-blog-container h4 {
+    color: var(--color-primary);
+}
+
+.small-blog-container:hover, .small-blog-container:focus {
+    background-color: var(--color-light-yellow);
+}
+
+@media screen and (max-width: 768px) {
+    .small-blog-container {
+        padding: 1.5rem 0;
+    }
+
+}
+

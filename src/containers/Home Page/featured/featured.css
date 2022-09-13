@@ -1,0 +1,52 @@
+.home-featured-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.home-featured-intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-featured-intro p:first-child {
+    opacity: 0.6;    
+}
+
+.home-featured-intro h4 {
+    color: var(--color-grey-mid);   
+}
+
+.home-featured-companies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home-featured-companies-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    color: var(--color-grey-dark);
+    font-size: 1.4rem;
+}
+
+.home-featured-companies-name {
+    display: flex;
+    align-items: center;
+}
+
+.home-featured-companies-name p {
+    font-weight: 700;
+    color: var(--color-grey-dark);
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .home-featured-companies-name:last-child {
+        display: none;
+    }
+}

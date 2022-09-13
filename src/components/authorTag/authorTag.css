@@ -1,0 +1,8 @@
+.author-tag {
+    color: var(--color-grey-dark);
+    margin: 1rem 0;
+}
+
+.author-tag span {
+    color: var(--color-purple);
+}
