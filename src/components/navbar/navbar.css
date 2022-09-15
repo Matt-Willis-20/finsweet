@@ -15,6 +15,10 @@ nav .logo {
     font-family: var(--font-family-heading);
 }
 
+nav .logo:hover {
+    text-decoration: none;
+}
+
 nav a {
     color: var(--color-white);
     margin-right: 2rem;

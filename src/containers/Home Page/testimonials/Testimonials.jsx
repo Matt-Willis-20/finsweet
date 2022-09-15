@@ -38,16 +38,15 @@ const Testimonials = () => {
     )
   })
 
-
     const slidesContainer = document.querySelector(".home-testimonials-carousel");
     const slide = document.querySelector(".home-testimonial-slide");
 
-    function nextSlide() {
+    const nextSlide = () => {
       const slideWidth = slide.clientWidth;
       slidesContainer.scrollLeft += slideWidth;
     }
   
-    function prevSlide() {
+    const prevSlide = () => {
       const slideWidth = slide.clientWidth;
       slidesContainer.scrollLeft -= slideWidth;
     }

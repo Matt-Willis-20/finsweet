@@ -10,10 +10,6 @@
     margin-top: 3rem;
 }
 
-.home-small-category-container div {
-    flex: 1;
-}
-
 @media screen and (max-width: 1200px) {
     .home-small-category-container {
         grid-template-columns: repeat(2, 1fr);

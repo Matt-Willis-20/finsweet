@@ -9,15 +9,17 @@ const Navbar = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  const handleClick = () =>
-    {toggleMenu
-      ? setToggleMenu(false)
-      : setToggleMenu(true)
+  const handleClick = () => {
+    if (toggleMenu) {
+      setToggleMenu(false);
+      } else {
+      setToggleMenu(true);
+      }
     }
 
   return (
     <nav id="main-nav">
-      <div className="logo">~Finsweet</div>
+      <Link to='/' className="logo">~Finsweet</Link>
       <div className="nav-links">
         <Link to='/' className='nav-link body-text-01' onClick={handleClick}>Home</Link>
         <Link to='/blog' className='nav-link body-text-01' onClick={handleClick}>Blog</Link>

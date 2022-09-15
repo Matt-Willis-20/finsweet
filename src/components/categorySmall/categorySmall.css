@@ -1,6 +1,10 @@
 .small-category-container {
     padding: 2rem;
     border: 1px solid rgba(109, 110, 118, 0.3);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
 }
 
 .small-category-container:hover, .small-category-container:focus {
@@ -9,7 +13,13 @@
 
 .small-category-container p {
     color: var(--color-grey-dark); 
-    margin-top: 0.5rem;  
+    margin-top: 0.5rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+.small-category-container h3 {
+    margin-top: 0.5rem;
 }
 
 .small-category-icon-container {
@@ -20,7 +30,6 @@
     height: 50px;
     width: 50px;
     border-radius: 10px;
-    margin-bottom: 0.5rem;
 }
 
 .small-category-icon-container * {

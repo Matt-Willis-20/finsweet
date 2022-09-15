@@ -9,6 +9,8 @@ import Contact from './pages/Contact';
 import FloatToTop from './components/floatToTop/FloatToTop';
 import Navbar from './components/navbar/Navbar';
 import Footer from './containers/footer/Footer';
+import BlogPage from './pages/BlogPage';
+import CategoryPage from './pages/CategoryPage';
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blogpage" element={<BlogPage />} />
+        <Route path="/categoryPage" element={<CategoryPage />} />
     </Routes>
     <Footer />
     <FloatToTop />

@@ -118,5 +118,9 @@ export const blogsContent = [
         alt: 'alt text',
         intro: "Duis aute dalor in reprehendrition volutpe veili esses cillm dalore su figure nulla pariator. Execptur sint occat cupidator non proident."
     },
-    
 ];
+
+
+let categoryList = [];
+blogsContent.map(blog => categoryList.push(blog.category));
+export let uniqueCategories = [...new Set(categoryList)];

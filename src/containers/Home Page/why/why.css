@@ -60,7 +60,7 @@
     .home-why-content {
         position: relative;
         margin: -120px auto;
-        width: 80%;
+        width: 84%;
     }
 
     .home-why-image img {
@@ -69,6 +69,12 @@
 
     .home-why-image-clip {
         clip-path: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-why-content h1 {
+        margin: 1rem 0;
     }
 }
 
@@ -81,15 +87,26 @@
     .home-why-content h1 {
         font-size: 34px;
         line-height: 46px;
-        margin: 1.5rem 0;
     }
 }
 
 @media screen and (max-width: 576px) {
     .home-why-content {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
         margin: 0 auto;
         width: 100%;
+    }
+
+    .home-why-content span {
+        font-size: 14px;
+    }
+
+    .home-why-content h1 {
+        margin: 0.75rem 0;
+    }
+
+    .home-why-content p {
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -97,6 +114,5 @@
     .home-why-content h1 {
         font-size: 26px;
         line-height: 38px;
-        margin: 1.5rem 0;
     }
 }

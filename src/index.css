@@ -78,6 +78,8 @@ h6 {
     font-size: 56px;
     line-height: 64px;
     font-family: var(--font-family-heading);
+    font-weight: 700;
+    letter-spacing: -2px;
 }
 
 .body-text-01 {
