@@ -8,13 +8,27 @@ import './categoryPage.css'
 
 const CategoryPage = () => {
     const [blogsList] = useState(blogsContent);
+    const [categoryBlogList, setCategoryBlogList] = useState([]);
+
+    const pageTitle = document.getElementById('category-page-title');
+    const pageCategory = document.getElementById('category-page-category');
+
+
+    const filterBlogs = (currentCategory) => {
+      const newBlogsList = blogsList.filter((newCategory) => {
+        return newCategory.category === currentCategory;
+      });
+      setCategoryBlogList(newBlogsList);
+      pageTitle.innerText = (currentCategory);
+      pageCategory.innerText = (currentCategory);
+    };
 
   return (
     <>
     <Header />
       <div className='category-page-container section-padding'>
-          <Blogs blogsList={blogsList} />
-          <Sidebar  />
+          <Blogs blogsList={categoryBlogList} />
+          <Sidebar filterBlogs={filterBlogs}  />
       </div>
     </>
   )

@@ -1,14 +1,7 @@
 import React from 'react';
 import './categorySmall.css';
 
-const CategorySmall = ({icon, category, text, setBlogsList, blogsList}) => {
-
-  const filterBlogs = (currentCategory) => {
-    const newBlogsList = blogsList.filter((newCategory) => {
-      return newCategory.category === currentCategory;
-    });
-    setBlogsList(newBlogsList);
-  };
+const CategorySmall = ({icon, category, text, filterBlogs}) => {
 
   return (
     <button className='small-category-container' category={category} onClick={() => filterBlogs(category)}>
