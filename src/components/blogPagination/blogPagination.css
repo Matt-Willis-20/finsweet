@@ -27,8 +27,8 @@
     font-size: 1.25rem;
 }
 
-.page-link:hover {
-    background-color: var(--color-secondary)
+.page-link:hover, .page-link:focus {
+    background-color: var(--color-secondary);
 }
 
 
