@@ -5,6 +5,7 @@
 
 #category-page-header .display-text {
     color: var(--color-primary);
+    text-transform: capitalize;
 }
 
 #category-page-header .body-text-01 {
