@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './category.css';
 import CategorySmall from '../../components/categorySmall/CategorySmall';
 import { FaRocket } from 'react-icons/fa';
@@ -11,10 +12,18 @@ const Category = () => {
     <section className='section-padding'>
       <h2 className='home-category-title'>Choose A Category</h2>
       <div className='home-small-category-container'>
-        <CategorySmall icon={<FaBuilding />} category="Business" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
-        <CategorySmall icon={<FaRocket />} category="Startup" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
-        <CategorySmall icon={<FaChartLine />} category="Economy" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
-        <CategorySmall icon={<GrTechnology />} category="Technology" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+        <Link to='/categoryPage'>
+          <CategorySmall icon={<FaBuilding />} category="business" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+        </Link>
+        <Link to='/categoryPage'>
+          <CategorySmall icon={<FaRocket />} category="startup" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+        </Link>
+        <Link to='/categoryPage'>
+          <CategorySmall icon={<FaChartLine />} category="economy" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+        </Link>
+        <Link to='/categoryPage'>
+          <CategorySmall icon={<GrTechnology />} category="technology" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
+        </Link>    
       </div>
     </section>
   )
