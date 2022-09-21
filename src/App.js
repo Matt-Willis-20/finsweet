@@ -1,29 +1,31 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-
-import Home from './pages/Home';
-import Blog from './pages/Blog';
-import About from './pages/About';
-import Contact from './pages/Contact';
 
 import FloatToTop from './components/floatToTop/FloatToTop';
 import Navbar from './components/navbar/Navbar';
 import Footer from './containers/footer/Footer';
-import BlogPage from './pages/BlogPage';
-import CategoryPage from './pages/CategoryPage';
+
+const Home = lazy(() => import('./pages/Home'));
+const Blog = lazy(() => import ('./pages/Blog'));
+const Contact = lazy(() => import('./pages/Contact'));
+const About = lazy(() => import ('./pages/About'));
+const BlogPage = lazy(() => import('./pages/BlogPage'));
+const CategoryPage = lazy(() => import ('./pages/CategoryPage'));
 
 const App = () => {
   return (
     <>
     <Navbar />
-    <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blogpage" element={<BlogPage />} />
-        <Route path="/categoryPage" element={<CategoryPage />} />
-    </Routes>
+    <Suspense fallback={<div>Loading...</div>}>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blogpage" element={<BlogPage />} />
+          <Route path="/categoryPage" element={<CategoryPage />} />
+      </Routes>
+    </Suspense>
     <Footer />
     <FloatToTop />
     </>
