@@ -1,0 +1,91 @@
+.about-page-team-container {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.about-page-team-content {
+    flex: 1;
+    padding: 5rem 5rem 5rem 0;
+}
+
+.about-page-team-content h4, .about-page-why-content h4 {
+    margin: 2rem 0;
+}
+
+.about-page-team-image {
+    background-image: url(../../../assets/images/about-creative.jpg);
+    width: 48%;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-page-why-container {
+    display: flex;
+}
+
+.about-page-why-content {
+    flex: 1;
+    padding: 5rem 0 5rem 3rem;
+}
+
+.about-page-why-image {
+    background-image: url(../../../assets/images/about-why.jpg);
+    width: 48%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .about-page-team-content {
+        padding: 3rem 5rem 3rem 0;
+    }
+    
+    .about-page-why-content {
+        padding: 3rem 0 3rem 3rem;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .about-page-team-container {
+        flex-direction: column-reverse;
+        margin-bottom: 7rem;
+    }
+
+    .about-page-team-image, .about-page-why-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .about-page-team-content, .about-page-why-content {
+        padding: 1.5rem 0 0 0;
+    }
+
+    .about-page-why-container {
+        flex-direction: column;
+    }
+
+    .about-page-team-content h2, .about-page-why-content h2 {
+        font-size: 30px;
+    }
+
+    .about-page-team-content h4, .about-page-why-content h4 {
+        font-size: 20px;
+        margin: 0.5rem 0 1rem;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .about-page-team-content h2, .about-page-why-content h2 {
+        font-size: 26px;
+    }
+
+    .about-page-team-content h4, .about-page-why-content h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0.5rem 0 1rem;
+    }
+}
