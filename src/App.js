@@ -1,6 +1,6 @@
 import React, { Suspense, lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Navbar, FloatToTop } from './components';
+import { Navbar, FloatToTop } from './components/index';
 import Footer from './containers/footer/Footer';
 
 const Home = lazy(() => import('./pages/Home'));
