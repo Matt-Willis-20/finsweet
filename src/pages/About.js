@@ -1,5 +1,9 @@
 import React, { useEffect } from 'react';
 import Join from '../containers/join/Join';
+import Header from '../containers/About Page/header/Header';
+import Authors from '../containers/About Page/authors/Authors';
+import Mission from '../containers/Home Page/mission/Mission';
+
 
 const About = () => {
 
@@ -10,6 +14,12 @@ const About = () => {
 
   return (
     <div>
+      <Header />
+      <div>
+        <div></div>
+        <Mission />
+      </div>
+      <Authors />
       <Join />
     </div>
   )
