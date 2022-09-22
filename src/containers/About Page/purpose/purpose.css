@@ -1,0 +1,117 @@
+
+
+.about-page-purpose-image {
+    position: relative;
+    background-image: url('../../../assets/images/friends.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.about-page-colorstrip {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 70%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-page-colorstrip .strip {
+    height: 20px;
+}
+
+.about-page-colorstrip .yellow {
+    background-color: var(--color-secondary);
+    flex: 3;
+}
+
+.about-page-colorstrip .purple {
+    background-color: var(--color-purple);
+    flex: 2;
+}
+
+.about-page-purpose-content {
+    display: flex;
+    background-color: var(--color-lavendar);
+    padding: 5rem;
+    gap: 4rem;
+}
+
+.about-page-mission, .about-page-vision {
+    flex: 1;
+}
+
+.about-page-mission span, .about-page-vision span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    color: var(--color-primary);  
+    font-family: var(--font-family-body);
+}
+
+.about-page-mission h3, .about-page-vision h3 {
+    margin: 1rem 0;
+}
+
+.about-page-mission p, .about-page-vision p {
+    color: var(--color-grey-mid);   
+}
+
+.about-page-mission p {
+    margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about-page-purpose-content {
+        padding: 4rem;
+        gap: 3rem;
+    }
+
+    .about-page-purpose-image {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .about-page-purpose-image {
+        height: 300px;
+    }
+
+    .about-page-colorstrip .strip {
+        height: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-page-purpose-content {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .about-page-purpose-content {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    .about-page-purpose-image {
+        height: 200px;
+    }
+
+    .about-page-colorstrip .strip {
+        height: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-page-missions h2, .about-page-vision h3 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -1px;; 
+    }
+}
