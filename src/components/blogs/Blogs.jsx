@@ -5,8 +5,8 @@ const Blogs = ({ blogsList }) => {
   return (
     <>
       <div className='blogs-list'>
-        {blogsList.map((blog, index) => (
-          <div className='large-blog-post-container' key={index} category={blog.category}>
+        {blogsList.map((blog) => (
+          <div className='large-blog-post-container' key={blog-id} category={blog.category}>
             <img src={require("../../assets/images/" + blog.src + ".jpg")} alt={blog.alt} />
             <div className='large-blog-post-content'>
               <span className='body-text-01'>{blog.category}</span>
