@@ -3,6 +3,7 @@ import Join from '../containers/join/Join';
 import Header from '../containers/About Page/header/Header';
 import Authors from '../containers/About Page/authors/Authors';
 import Mission from '../containers/Home Page/mission/Mission';
+import Team from '../containers/About Page/team/Team';
 
 
 const About = () => {
@@ -19,6 +20,7 @@ const About = () => {
         <div></div>
         <Mission />
       </div>
+      <Team />
       <Authors />
       <Join />
     </div>
