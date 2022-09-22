@@ -1,0 +1,101 @@
+.home-about-colorstrip {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+}
+
+.strip {
+    height: 20px;
+}
+
+.white {
+    background-color: var(--color-white);
+}
+
+.yellow {
+    background-color: var(--color-secondary);
+}
+
+.purple {
+    background-color: var(--color-purple);
+}
+
+.home-about-container {
+    display: flex;
+    background-color: var(--color-lavendar);
+    padding: 5rem;
+    gap: 4rem;
+}
+
+.home-about-us, .home-about-mission {
+    flex: 1;
+}
+
+.home-about-us span, .home-about-mission span {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase; 
+    color: var(--color-primary);  
+    font-family: var(--font-family-body);
+}
+
+.home-about-us h2 {
+    margin: 1rem 0; 
+}
+
+.home-about-mission h3 {
+    margin: 1rem 0;
+}
+
+.home-about-us p, .home-about-mission p {
+    color: var(--color-grey-mid);   
+}
+
+.home-about-us p {
+    margin-bottom: 1rem;
+}
+
+.home-about-us a {
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+@media screen and (max-width: 1200px) {
+    .home-about-container {
+        padding: 4rem;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .home-about-us h2 {
+        font-size: 28px;
+        line-height: 40px;
+        letter-spacing: -1px;; 
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .home-about-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-about-container {
+        padding: 2rem;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home-about-us h2, .home-about-mission h3 {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -1px;; 
+    }
+}
