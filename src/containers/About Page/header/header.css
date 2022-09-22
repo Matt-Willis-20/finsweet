@@ -1,15 +1,15 @@
 #about-page-header {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .about-header-container {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
 
 .about-header-title {
-    padding-left: 1rem;
-    min-width: 500px;
+    max-width: 50%;
 }
 
 .about-header-title p {
@@ -23,6 +23,7 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    max-width: 800px;
 }
 
 
