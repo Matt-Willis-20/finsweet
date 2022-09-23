@@ -1,10 +1,6 @@
 import React from 'react';
 import './featured.css';
-import { ImQuill } from "react-icons/im";
-import { ImSpinner4 } from "react-icons/im";
-import { ImShield } from "react-icons/im";
-import { ImDropbox } from "react-icons/im";
-import { ImXing2 } from "react-icons/im";
+import { ImQuill, ImSpinner4, ImShield, ImDropbox, ImXing2 } from 'react-icons/im';
 
 const Featured = () => {
   return (
