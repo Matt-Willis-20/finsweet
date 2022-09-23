@@ -1,9 +1,6 @@
-import React, { useEffect } from 'react';
-import Join from '../containers/join/Join';
-import Header from '../containers/About Page/header/Header';
+import React, { useEffect } from 'react'
 import Authors from '../containers/About Page/authors/Authors';
-import Team from '../containers/About Page/team/Team';
-import Purpose from '../containers/About Page/purpose/Purpose'
+import { AboutHeader, Team, Purpose, Join } from '../containers/index';
 
 
 const About = () => {
@@ -15,7 +12,7 @@ const About = () => {
 
   return (
     <div>
-      <Header />
+      <AboutHeader />
       <Purpose />
       <Team />
       <Authors />
