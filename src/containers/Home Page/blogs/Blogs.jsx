@@ -1,10 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AuthorTag from '../../../components/authorTag/AuthorTag';
-import BlogSmall from '../../../components/blogSmall/BlogSmall';
-import Button from '../../../components/button/Button';
+import { AuthorTag, BlogSmall, Button } from '../../../components/index';
 import Blog01 from '../../../assets/images/blog01.jpg';
-
 import './blogs.css';
 
 const Blogs = () => {
