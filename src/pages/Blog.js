@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
-import Join from '../containers/join/Join';
-import Header from '../containers/Blog Page/Header/Header'
-import Category from '../containers/category/Category';
-import AllBlogs from '../containers/Blog Page/allBlogs/AllBlogs';
+import { Join, Category, BlogPageHeader, AllBlogs } from '../containers/index';
 
 const Blog = () => {
   useEffect(() => {
@@ -12,7 +9,7 @@ const Blog = () => {
 
   return (
     <div>
-      <Header />
+      <BlogPageHeader />
       <AllBlogs />
       <Category />
       <Join />
