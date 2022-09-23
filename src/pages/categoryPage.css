@@ -9,21 +9,17 @@
     grid-template-columns: 1fr 1fr;
 }
 
-
-
 @media screen and (max-width: 1550px) {
     .category-page-container {
         gap: 7rem;
     }
 }
 
-
 @media screen and (max-width: 1400px) {
     .category-page-container {
         gap: 5rem;
     }
 }
-
 
 @media screen and (max-width: 1200px) {
     .category-page-container {
