@@ -9,9 +9,11 @@ const Sidebar = ({filterBlogs}) => {
     <div className='category-sidebar-container'>
         <h2>Categories</h2>
         <div className='category-container'>
+            <CategorySmall category="All Posts" filterBlogs={filterBlogs} />
             {uniqueCategories.map((category, index) => (
                 <CategorySmall key={index} category={category} filterBlogs={filterBlogs} />
             ))}
+            
         </div>
     </div>
   )
