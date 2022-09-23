@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../../components/button/Button';
-
-import { BsFacebook } from 'react-icons/bs';
-import { BsTwitter } from 'react-icons/bs';
-import { BsInstagram } from 'react-icons/bs';
-import { BsLinkedin } from 'react-icons/bs';
-
+import { BsFacebook, BsTwitter, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import './footer.css';
 
 const Footer = () => {
@@ -22,16 +17,16 @@ const Footer = () => {
       <div className='subscribe-container'>
         <h2>Subscribe to our news letter to get latest updates and news</h2>
         <form onSubmit={handleSubmit}>
-          <input 
-            type="email" 
+          <input
+            type="email"
             name="email"
-            placeholder='email address' 
-            className='body-text-01' 
+            placeholder='email address'
+            className='body-text-01'
             value={email || ""}
             onChange={(e) => setEmail(e.target.value)}
           >
           </input>
-          <Button 
+          <Button
             type="submit"
             text="Subscribe"
           />
