@@ -13,10 +13,13 @@ export { default as Mission } from './Home Page/mission/Mission';
 export { default as Why } from './Home Page/why/Why';
 export { default as Testimonials } from './Home Page/testimonials/Testimonials';
 export { default as Featured } from './Home Page/featured/Featured';
+export { default as HomePageAuthors } from './Home Page/homePageAuthors/HomePageAuthors';
 
 
 // Blog Page Containers ------------------- //
 
+export { default as BlogPageHeader } from './Blog Page/blogPageHeader/BlogPageHeader';
+export { default as AllBlogs } from './Blog Page/allBlogs/AllBlogs';
 
 // About Page Containers ----------------------- //
 
