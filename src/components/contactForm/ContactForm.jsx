@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './contactForm.css';
 
 const ContactForm = () => {
@@ -10,7 +9,7 @@ const ContactForm = () => {
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
-    setInputs(values => ({...values, [name]: value}))  
+    setInputs(values => ({ ...values, [name]: value }))
   }
 
   const handleSubmit = (event) => {
@@ -28,7 +27,7 @@ const ContactForm = () => {
       <label>Full Name:</label>
       <input
         required
-        type="text" 
+        type="text"
         name="usersName"
         value={inputs.usersName || ""}
         onChange={handleChange}
